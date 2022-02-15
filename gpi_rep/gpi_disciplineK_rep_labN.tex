@@ -9,26 +9,26 @@
 \usepackage{_sty/gpi_u}
 
 % Код
-\ESKDletter{О}{Л}{Р}
-\def \gpiDocTypeNum {81}
-\def \gpiDocVer {00}
-\def \gpiCode {\ESKDtheLetterI\ESKDtheLetterII\ESKDtheLetterIII.\gpiStudentGroupName\gpiStudentGroupNum.\gpiStudentCard-0\gpiDocNum~\gpiDocTypeNum~\gpiDocVer}
+% \ESKDletter{О}{Л}{Р}
+% \def \gpiDocTypeNum {81}
+% \def \gpiDocVer {00}
+% \def \gpiCode {\ESKDtheLetterI\ESKDtheLetterII\ESKDtheLetterIII.\gpiStudentGroupName\gpiStudentGroupNum.\gpiStudentCard-0\gpiDocNum~\gpiDocTypeNum~\gpiDocVer}
 
-\def \gpiDocTopic {ОТЧЁТ ЛАБОРАТОРНОЙ РАБОТЫ}
+\def \gpiDocTopic {ОТЧЁТ ЛАБОРАТОРНОЙ РАБОТЫ №\gpiDocNum}
 
 % Графа 1 (наименование изделия/документа)
-\ESKDcolumnI {\ESKDfontII \gpiTopic \\ \gpiDocTopic}
+% \ESKDcolumnI {\ESKDfontII \gpiTopic \\ \gpiDocTopic}
 
 % Графа 2 (обозначение документа)
-\ESKDsignature {\gpiCode}
+% \ESKDsignature {\gpiCode}
 
 % Графа 9 (наименование или различительный индекс предприятия) задает команда
-\ESKDcolumnIX {\gpiDepartment}
+% \ESKDcolumnIX {\gpiDepartment}
 
 % Графа 11 (фамилии лиц, подписывающих документ) задают команды
-\ESKDcolumnXIfI {\gpiStudentSurname}
-\ESKDcolumnXIfII {\gpiTeacherSurname}
-\ESKDcolumnXIfV {\gpiTeacherSurname}
+% \ESKDcolumnXIfI {\gpiStudentSurname}
+% \ESKDcolumnXIfII {\gpiTeacherSurname}
+% \ESKDcolumnXIfV {\gpiTeacherSurname}
 
 \begin{document}
     \input{_tex/gpi_rep_titlePage.tex}
