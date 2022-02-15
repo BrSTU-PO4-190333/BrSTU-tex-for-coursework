@@ -1,0 +1,78 @@
+\documentclass[12pt, a4paper, simple]{eskdtext}
+
+\usepackage{hyperref}
+\usepackage{env}
+\usepackage{_sty/gpi_lst}
+\usepackage{_sty/gpi_toc}
+\usepackage{_sty/gpi_t}
+\usepackage{_sty/gpi_p}
+
+% Код
+\ESKDletter{}{К}{Р}
+\def \gpiDocTypeNum {81}
+\def \gpiDocVer {00}
+\def \gpiCode {\ESKDtheLetterI\ESKDtheLetterII\ESKDtheLetterIII.\gpiStudentGroupName\gpiStudentGroupNum.\gpiStudentCard-0\gpiDocNum~\gpiDocTypeNum~\gpiDocVer}
+
+\def \gpiDocTopic {ПОЯСНИТЕЛЬНАЯ ЗАПИСКА}
+
+% Графа 1 (наименование изделия/документа)
+\ESKDcolumnI {\ESKDfontIII \gpiTopic \\ \gpiDocTopic}
+
+% Графа 2 (обозначение документа)
+\ESKDsignature {\gpiCode}
+
+% Графа 9 (наименование или различительный индекс предприятия) задает команда
+\ESKDcolumnIX {\gpiDepartment}
+
+% Графа 11 (фамилии лиц, подписывающих документ) задают команды
+\ESKDcolumnXIfI {\gpiStudentSurname}
+\ESKDcolumnXIfII {\gpiTeacherSurname}
+\ESKDcolumnXIfV {\gpiTeacherSurname}
+
+\begin{document}
+    \input{_tex/gpi_pz_titlePage.tex}
+
+    % Содержание
+    \tableofcontents                                
+    \paragraph{ПРИЛОЖЕНИЕ А. СХЕМА ПРОГРАММЫ}
+    \paragraph{ПРИЛОЖЕНИЕ Б. ТЕКСТ ПРОГРАММЫ}
+    \newpage
+
+    %
+    \section*{ВВЕДЕНИЕ}
+    \addcontentsline{toc}{section}{ВВЕДЕНИЕ}
+    \newpage
+
+    %
+    \section{СИСТЕМНЫЙ АНАЛИЗ И ПОСТАНОВКА ЗАДАЧИ}
+    \subsection{Перечень функций}
+    \subsection{Требования пользователей}
+    \newpage
+
+    %
+    \section{ПРОЕКТИРОВАНИЕ СИСТЕМЫ}
+    \subsection{Проектирование архитектуры ПО (модули)}
+    \subsection{Проектирование UI (макеты)}
+    \newpage
+
+    %
+    \section{РЕАЛИЗАЦИЯ СИСТЕМЫ}
+    \newpage
+
+    %
+    \section{ТЕСТИРОВАНИЕ СИСТЕМЫ}
+    \newpage
+
+    %
+    \section*{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}
+    \addcontentsline{toc}{section}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}
+    \begin{enumerate}
+        \item[1.] ОСНОВЫ VAGRANT > Установка Vagrant на Windows 10 - [Электронный ресурс] \\
+        URL: \url{https://www.youtube.com/watch?v=fESCSA-wQEQ}\\
+        (дата обращения: 13.02.2022).
+        \item[2.] Установка Apache, PHP, MySQL (LAMP) на VDS сервер (в Ubuntu) - [Электронный ресурс] \\
+        URL: \url{https://www.youtube.com/watch?v=FxwPQkP3OGY}\\
+        (дата обращения: 15.02.2022).
+    \end{enumerate}
+    \newpage
+\end{document}
