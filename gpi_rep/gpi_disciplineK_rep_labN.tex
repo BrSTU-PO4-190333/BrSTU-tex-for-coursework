@@ -14,7 +14,7 @@
 % \def \gpiDocVer {00}
 % \def \gpiCode {\ESKDtheLetterI\ESKDtheLetterII\ESKDtheLetterIII.\gpiStudentGroupName\gpiStudentGroupNum.\gpiStudentCard-0\gpiDocNum~\gpiDocTypeNum~\gpiDocVer}
 
-\def \gpiDocTopic {ОТЧЁТ ЛАБОРАТОРНОЙ РАБОТЫ №\gpiDocNum}
+\def \gpiDocTopic {Отчёт лабораторной работы №\gpiDocNum}
 
 % Графа 1 (наименование изделия/документа)
 % \ESKDcolumnI {\ESKDfontII \gpiTopic \\ \gpiDocTopic}
@@ -33,16 +33,46 @@
 \begin{document}
     \input{_tex/gpi_rep_titlePage.tex}
     \ESKDstyle{empty}
-    %
-    \section*{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}
+    \begin{center}
+        \textbf{\gpiDocTopic}
+    \end{center}
+
+    % = = = = = = = =
+    \paragraph{} \textbf{Тема}: <<\gpiTopicRep>>
+
+    \paragraph{} \textbf{Цель}: Сгенерировать отчёт, используя \LaTeX.
+
+    \paragraph{} \textbf{Что нужно сделать}:
+
+    \paragraph{} \textbf{Разработка дизайна}:
+
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[]
+            {_assets/ClassDiagram.png}
+        \caption{Диграмма классов}
+    \end{figure}
+
+    \paragraph{} \textbf{Исходный код}: 
+
+    \lstinputlisting[language=c]{src/HelloWorld.c}
+
+    \begin{lstlisting}[caption=Вывод в консоль]
+ Hello, World!
+\end{lstlisting}
+
+    \paragraph{} \textbf{Вывод}: создали отчёт, используя \LaTeX.
+
+    % = = = = = = = =
+    \section*{Список использованных источников}
     \addcontentsline{toc}{section}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}
     \begin{enumerate}
-        \item[1.] ОСНОВЫ VAGRANT > Установка Vagrant на Windows 10 - [Электронный ресурс]
-        URL: \url{https://www.youtube.com/watch?v=fESCSA-wQEQ}
-        (дата~обращения:~13.02.2022).
-        \item[2.] Установка Apache, PHP, MySQL (LAMP) на VDS сервер (в Ubuntu) - [Электронный ресурс]
-        URL: \url{https://www.youtube.com/watch?v=FxwPQkP3OGY}
-        (дата~обращения:~15.02.2022).
+        \item[1.] eskdx.pdf [Электронный ресурс]
+        - Режим доступа: \url{http://tug.ctan.org/macros/latex/contrib/eskdx/manual/eskdx.pdf}.
+        Дата~доступа:~20.02.2022.
+        \item[2.] Опции пакета hyperref [Электронный ресурс]
+        - Режим доступа: \url{https://grammarware.net/text/syutkin/hyperref_options.pdf}.
+        Дата~доступа:~20.02.2022.
     \end{enumerate}
     \newpage
 \end{document}
