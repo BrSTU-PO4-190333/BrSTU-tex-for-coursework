@@ -1,6 +1,7 @@
 \documentclass[12pt, a4paper, simple]{eskdtext}
 
-\usepackage{env}
+\usepackage{_env/gpi_global.env}
+\usepackage{_env/gpi_coursework.env}
 
 % Код
 \ESKDletter{}{К}{Р}
@@ -22,7 +23,7 @@
 % Графа 11 (фамилии лиц, подписывающих документ) задают команды
 \ESKDcolumnXIfI {\gpiStudentSurname}
 \ESKDcolumnXIfII {\gpiTeacherSurname}
-\ESKDcolumnXIfV {\gpiTeacherSurname}
+\ESKDcolumnXIfV {\gpiReviewerSurname}
 
 \begin{document}
     \input{_tex/gpi_a_titlePage.tex}

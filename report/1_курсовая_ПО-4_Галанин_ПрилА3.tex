@@ -1,19 +1,15 @@
-\documentclass[12pt, a4paper, simple]{eskdtext}
+\documentclass[a3paper, landscape]{eskdgraph}
 
-\usepackage{hyperref}
-\usepackage{env}
-\usepackage{_sty/gpi_lst}
-\usepackage{_sty/gpi_toc}
-\usepackage{_sty/gpi_t}
-\usepackage{_sty/gpi_p}
+\usepackage{_env/gpi_global.env}
+\usepackage{_env/gpi_coursework.env}
 
 % Код
 \ESKDletter{}{К}{Р}
-\def \gpiDocTypeNum {12}
+\def \gpiDocTypeNum {90}
 \def \gpiDocVer {00}
-\def \gpiCode {\ESKDtheLetterI\ESKDtheLetterII\ESKDtheLetterIII.\gpiStudentGroupName\gpiStudentGroupNum.\gpiStudentCard-07~\gpiDocTypeNum~\gpiDocVer}
+\def \gpiCode {\ESKDtheLetterI\ESKDtheLetterII\ESKDtheLetterIII.\gpiStudentGroupName\gpiStudentGroupNum.\gpiStudentCard-0\gpiDocNum~\gpiDocTypeNum~\gpiDocVer}
 
-\def \gpiDocTopic {ТЕКСТ ПРОГРАММЫ}
+\def \gpiDocTopic {СХЕМА ПРОГРАММЫ}
 
 % Графа 1 (наименование изделия/документа)
 \ESKDcolumnI {\ESKDfontIII \gpiTopic \\ \gpiDocTopic}
@@ -27,10 +23,13 @@
 % Графа 11 (фамилии лиц, подписывающих документ) задают команды
 \ESKDcolumnXIfI {\gpiStudentSurname}
 \ESKDcolumnXIfII {\gpiTeacherSurname}
-\ESKDcolumnXIfV {\gpiTeacherSurname}
+\ESKDcolumnXIfV {\gpiReviewerSurname}
 
 \begin{document}
-    \input{_tex/gpi_b_titlePage.tex}
-    \lstinputlisting[language=c]{src/HelloWorld.c}
-    \lstinputlisting[]{src/HelloWorld.html}
+    \hspace{0pt}
+    \begin{figure}[!h]
+        \centering
+        \includegraphics[]
+            {_assets/Flowcharts.png}
+    \end{figure}
 \end{document}

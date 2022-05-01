@@ -1,9 +1,0 @@
-{
-  "dependencies": {
-    "gh-pages": "^3.2.3"
-  },
-  "scripts": {
-      "copy": "rm -rfv public & mkdir public & cp ../gpi_rep/_build/*.pdf public",
-      "deploy": "gh-pages -d public"
-  }
-}

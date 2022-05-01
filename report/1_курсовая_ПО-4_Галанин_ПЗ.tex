@@ -1,7 +1,8 @@
 \documentclass[12pt, a4paper, simple]{eskdtext}
 
 \usepackage{hyperref}
-\usepackage{env}
+\usepackage{_env/gpi_global.env}
+\usepackage{_env/gpi_coursework.env}
 \usepackage{_sty/gpi_lst}
 \usepackage{_sty/gpi_toc}
 \usepackage{_sty/gpi_t}
@@ -28,7 +29,9 @@
 % Графа 11 (фамилии лиц, подписывающих документ) задают команды
 \ESKDcolumnXIfI {\gpiStudentSurname}
 \ESKDcolumnXIfII {\gpiTeacherSurname}
-\ESKDcolumnXIfV {\gpiTeacherSurname}
+\ESKDcolumnXIfV {\gpiReviewerSurname}
+
+\renewcommand {\thefigure} {\arabic{section}.\arabic{figure}}
 
 \begin{document}
     \input{_tex/gpi_pz_titlePage.tex}
