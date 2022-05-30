@@ -32,17 +32,20 @@
 \ESKDcolumnXIfV {\gpiReviewerSurname}
 
 \begin{document}
-
-
 \input{_tex/gpi_pz_titlePage.tex}
 
 
+\ESKDthisStyle{empty}
+Здесь лист с ТЗ.
+
+
 % Содержание
+\newpage
+\ESKDthisStyle{formII}
 \tableofcontents
-\thispagestyle{empty}
+\thispagestyle{empty} % кастыль, который уберает нумерацию по центру после содержания
 \paragraph{ПРИЛОЖЕНИЕ А. СХЕМА ПРОГРАММЫ}
 \paragraph{ПРИЛОЖЕНИЕ Б. ТЕКСТ ПРОГРАММЫ}
-\newpage
 
 
 \newpage
@@ -201,6 +204,4 @@ CREATE TABLE "catalog__nomenclature" (
 
 
 \newpage
-
-
 \end{document}
