@@ -1,6 +1,4 @@
-package com.example.someapp;
-
-public class SomeApp {
+public class Main {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
     }

@@ -34,48 +34,72 @@
 \begin{document}
     \input{_tex/gpi_rep_titlePage.tex}
     \ESKDstyle{empty}
+
+
     \begin{center}
         \textbf{\gpiDocTopic}
     \end{center}
 
-    % = = = = = = = =
+
     \paragraph{} \textbf{Тема}: <<\gpiTopicRep>>
+
 
     \paragraph{} \textbf{Цель}: Сгенерировать отчёт, используя \LaTeX.
 
+
     \paragraph{} \textbf{Что нужно сделать}:
+
+
 
     \paragraph{} \textbf{Разработка дизайна}:
 
-    % \begin{figure}[!h]
-    %     \centering
-    %     \includegraphics[]
-    %         {_assets/ClassDiagram.png}
-    %     \caption{Диграмма классов}
-    % \end{figure}
+
+    \begin{figure}[!h]
+        \centering
+        % \includegraphics[]
+        % {_assets/ClassDiagram.png}
+        \caption{Дизайн}
+    \end{figure}
+
 
     \paragraph{} \textbf{Исходный код}: 
 
-    \lstinputlisting[language=c]{src/main.c}
-    \lstinputlisting[language=java]{src/main.java}
+    \lstinputlisting[language=java, name=Main.java]
+    {../sources/some_project/Main.java}
+
 
     \begin{lstlisting}[caption=Вывод в консоль]
- Hello, World!
+Hello, World!
 \end{lstlisting}
 
-    \paragraph{} \textbf{Вывод}: создали отчёт, используя \LaTeX.
+
+    \paragraph{} \textbf{Вывод}:
+    создали отчёт, используя \LaTeX.
+
 
     % = = = = = = = =
     % \newpage
     % \addcontentsline{toc}{section}{Список использованных источников}
     \section*{Список использованных источников}
     \begin{enumerate}
-        \item[1.] eskdx.pdf [Электронный ресурс]
-        - Режим доступа: \url{http://tug.ctan.org/macros/latex/contrib/eskdx/manual/eskdx.pdf}.
-        Дата~доступа:~20.02.2022.
-        \item[2.] Опции пакета hyperref [Электронный ресурс]
-        - Режим доступа: \url{https://grammarware.net/text/syutkin/hyperref_options.pdf}.
+        \item[1.] Коллекция eskdx v0.98 - eskdx.pdf
+        - [Электронный ресурс]
+        Режим доступа: \url{http://tug.ctan.org/macros/latex/contrib/eskdx/manual/eskdx.pdf}
+        Дата доступа: 30.05.2022.
+    
+        \item[2.] Использование системы верстки LaTeX - EVMiS\_Latex.pdf
+        - [Электронный ресурс]
+        Режим доступа: \url{https://www.bstu.by/uploads/attachments/metodichki/kafedri/EVMiS_Latex.pdf}
+        Дата доступа: 30.05.2022.
+    
+        \item[3.] Опции пакета hyperref
+        - [Электронный ресурс]
+        Режим доступа: \url{https://grammarware.net/text/syutkin/hyperref_options.pdf}.
         Дата~доступа:~20.02.2022.
     \end{enumerate}
+
+
     \newpage
+
+
 \end{document}
