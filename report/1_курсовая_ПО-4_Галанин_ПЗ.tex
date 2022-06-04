@@ -1,4 +1,9 @@
-\documentclass[12pt, a4paper, simple]{eskdtext}
+\documentclass[
+    12pt, % Устанавливает размер шрифта документа (12pt, 14pt)
+    a4paper, % Лист А4
+    simple, % Тоже самое что nocolumnsxix, nocolumnxxxi и nocolumnxxxii
+    floatsection % Счётчик рисунков обнуляется каждую главу и нумеруется с номером главы, например, Рисунок 2.1
+]{eskdtext}
 
 \usepackage{hyperref}
 \usepackage{_env/gpi_global.env}
@@ -6,7 +11,6 @@
 \usepackage{_sty/gpi_lst}
 \usepackage{_sty/gpi_toc}
 \usepackage{_sty/gpi_t}
-\usepackage{_sty/gpi_p}
 \usepackage{_sty/gpi_u}
 
 % Код
