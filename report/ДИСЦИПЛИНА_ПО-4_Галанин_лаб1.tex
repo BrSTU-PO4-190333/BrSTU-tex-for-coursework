@@ -1,6 +1,5 @@
 \documentclass[12pt, a4paper, simple]{eskdtext}
 
-\usepackage{hyperref}
 \usepackage{_env/gpi_global.env}
 \usepackage{_env/gpi_report.env}
 \usepackage{_sty/gpi_lst}
@@ -8,100 +7,83 @@
 \usepackage{_sty/gpi_t}
 \usepackage{_sty/gpi_u}
 
-% Код
-% \ESKDletter{О}{Л}{Р}
-% \def \gpiDocTypeNum {81}
-% \def \gpiDocVer {00}
-% \def \gpiCode {\ESKDtheLetterI\ESKDtheLetterII\ESKDtheLetterIII.\gpiStudentGroupName\gpiStudentGroupNum.\gpiStudentCard-0\gpiDocNum~\gpiDocTypeNum~\gpiDocVer}
-
 \def \gpiDocTopic {Отчёт лабораторной работы №\gpiDocNum}
 
-% Графа 1 (наименование изделия/документа)
-% \ESKDcolumnI {\ESKDfontII \gpiTopic \\ \gpiDocTopic}
-
-% Графа 2 (обозначение документа)
-% \ESKDsignature {\gpiCode}
-
-% Графа 9 (наименование или различительный индекс предприятия) задает команда
-% \ESKDcolumnIX {\gpiDepartment}
-
-% Графа 11 (фамилии лиц, подписывающих документ) задают команды
-% \ESKDcolumnXIfI {\gpiStudentSurname}
-% \ESKDcolumnXIfII {\gpiTeacherSurname}
-% \ESKDcolumnXIfV {\gpiTeacherSurname}
-
-% \renewcommand {\thefigure} {\arabic{section}.\arabic{figure}} % Рисунок - секция.счётчик
-\renewcommand {\thefigure} {\arabic{figure}} % Рисунок - счётчик
-
 \begin{document}
-    \input{_tex/gpi_title_page_report.tex}
-    \ESKDstyle{empty}
+\input{_tex/gpi_title_page_report.tex}
+
+\ESKDstyle{empty}
+
+\begin{center}
+    \textbf{\gpiDocTopic}
+\end{center}
+
+\paragraph{} \textbf{Тема}: <<\gpiTopicRep>>
+
+\paragraph{} \textbf{Цель}: Сгенерировать отчёт, используя \LaTeX.
+
+\paragraph{} \textbf{Что нужно сделать}:
+
+\paragraph{} \textbf{Разработка дизайна}:
+
+\begin{figure}[!h]
+    \centering
+    % \includegraphics[]
+    % {_assets/ClassDiagram.png}
+    \caption{Дизайн}
+\end{figure}
+
+\paragraph{} \textbf{Исходный код}: 
+
+\lstinputlisting[language=java, name=Main.java]
+{../sources/some_project/Main.java}
 
 
-    \begin{center}
-        \textbf{\gpiDocTopic}
-    \end{center}
-
-
-    \paragraph{} \textbf{Тема}: <<\gpiTopicRep>>
-
-
-    \paragraph{} \textbf{Цель}: Сгенерировать отчёт, используя \LaTeX.
-
-
-    \paragraph{} \textbf{Что нужно сделать}:
-
-
-
-    \paragraph{} \textbf{Разработка дизайна}:
-
-
-    \begin{figure}[!h]
-        \centering
-        % \includegraphics[]
-        % {_assets/ClassDiagram.png}
-        \caption{Дизайн}
-    \end{figure}
-
-
-    \paragraph{} \textbf{Исходный код}: 
-
-    \lstinputlisting[language=java, name=Main.java]
-    {../sources/some_project/Main.java}
-
-
-    \begin{lstlisting}[caption=Вывод в консоль]
+\begin{lstlisting}[name=Вывод в консоль]
 Hello, World!
 \end{lstlisting}
 
 
-    \paragraph{} \textbf{Вывод}:
-    создали отчёт, используя \LaTeX.
+\paragraph{} \textbf{Вывод}:
+создали отчёт, используя \LaTeX.
 
 
-    % = = = = = = = =
-    % \newpage
-    % \addcontentsline{toc}{section}{Список использованных источников}
-    \section*{Список использованных источников}
-    \begin{enumerate}
-        \item[1.] Коллекция eskdx v0.98 - eskdx.pdf
-        - [Электронный ресурс]
-        Режим доступа: \url{http://tug.ctan.org/macros/latex/contrib/eskdx/manual/eskdx.pdf}
-        Дата доступа: 30.05.2022.
-    
-        \item[2.] Использование системы верстки LaTeX - EVMiS\_Latex.pdf
-        - [Электронный ресурс]
-        Режим доступа: \url{https://www.bstu.by/uploads/attachments/metodichki/kafedri/EVMiS_Latex.pdf}
-        Дата доступа: 30.05.2022.
-    
-        \item[3.] Опции пакета hyperref
-        - [Электронный ресурс]
-        Режим доступа: \url{https://grammarware.net/text/syutkin/hyperref_options.pdf}.
-        Дата~доступа:~20.02.2022.
-    \end{enumerate}
+% = = = = = = = =
+\newpage
+% \addcontentsline{toc}{section}{Список использованных источников}
+% \section*{Список использованных источников}
+\paragraph{} \textbf{Список использованных источников}:
+\begin{enumerate}
+    \item[1.] Коллекция eskdx v0.98 - eskdx.pdf
+    - [Электронный ресурс]
+    Режим доступа: \url{http://tug.ctan.org/macros/latex/contrib/eskdx/manual/eskdx.pdf}
+    Дата доступа: 30.05.2022.
 
+    \item[2.] Использование системы верстки LaTeX - EVMiS\_Latex.pdf
+    - [Электронный ресурс]
+    Режим доступа: \url{https://www.bstu.by/uploads/attachments/metodichki/kafedri/EVMiS_Latex.pdf}
+    Дата доступа: 30.05.2022.
 
-    \newpage
+    \item[3.] Опции пакета hyperref
+    - [Электронный ресурс]
+    Режим доступа: \url{https://grammarware.net/text/syutkin/hyperref_options.pdf}.
+    Дата~доступа:~20.02.2022.
 
+    \item[4.] Developers - Docker
+    - [Electronic resource]
+    Mode of access: \url{https://www.docker.com/get-started/}
+    Date~of~access:~04.06.2022.
 
+    \item[5.] Manual installation steps for older versions of WSL | Microsoft Docs
+    - [Электронный ресурс]
+    Mode of access: \url{https://aka.ms/wsl2kernel}
+    Date~of~access:~04.06.2022.
+
+    \item[6.] LaTeX/Source Code Listings - Wikibooks, open books for an open world
+    - [Electronic resource]
+    Mode of access: \url{https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings}
+    Date~of~access:~04.06.2022.
+\end{enumerate}
+
+\newpage
 \end{document}
