@@ -4,6 +4,9 @@
 \usepackage{_env/gpi_coursework.env}
 \usepackage{_sty/gpi_lst}
 
+% Буква приложения
+\def \gpiPrilLetter {Б}
+
 % Код
 \ESKDletter{}{К}{Р}
 \def \gpiDocTypeNum {12}
@@ -27,7 +30,7 @@
 \ESKDcolumnXIfV {\gpiReviewerSurname}
 
 \begin{document}
-    \input{_tex/gpi_b_titlePage.tex}
+    \input{_tex/gpi_title_page_scheme.tex}
     
     \lstinputlisting[language=java, name=Main.java]
     {../sources/some_project/Main.java}

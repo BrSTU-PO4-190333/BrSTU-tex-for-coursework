@@ -27,12 +27,24 @@
 \ESKDcolumnIX {\gpiDepartment}
 
 % Графа 11 (фамилии лиц, подписывающих документ) задают команды
+
+% Разработал
 \ESKDcolumnXIfI {\gpiStudentSurname}
+
+% Проверил
 \ESKDcolumnXIfII {\gpiTeacherSurname}
-\ESKDcolumnXIfV {\gpiReviewerSurname}
+
+% Проверил (вторая строка)
+% \ESKDcolumnXIfIV {Ббббб}
+
+% Норм контроль
+\ESKDcolumnXIfV {\gpiNormalControlSurname}
+
+% Удтвердил
+% \ESKDcolumnXIfVI {Ввввв}
 
 \begin{document}
-\input{_tex/gpi_pz_titlePage.tex}
+\input{_tex/gpi_title_page_PZ.tex}
 
 
 \ESKDthisStyle{empty}
