@@ -24,9 +24,21 @@
 \ESKDcolumnIX {\gpiDepartment}
 
 % Графа 11 (фамилии лиц, подписывающих документ) задают команды
+
+% Разраб.
 \ESKDcolumnXIfI {\gpiStudentSurname}
+
+% Пров.
 \ESKDcolumnXIfII {\gpiTeacherSurname}
-\ESKDcolumnXIfV {\gpiReviewerSurname}
+
+% (пустая строка после Пров. и перед Н. контр.)
+% \ESKDcolumnXIfIV {Ббббб}
+
+% Н. контр.
+\ESKDcolumnXIfV {\gpiNormalControlSurname}
+
+% Утв.
+% \ESKDcolumnXIfVI {Ввввв}
 
 \begin{document}
     \input{_tex/gpi_title_page_scheme.tex}

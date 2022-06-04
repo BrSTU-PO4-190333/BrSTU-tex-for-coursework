@@ -3,9 +3,10 @@
 \usepackage{_env/gpi_global.env}
 \usepackage{_env/gpi_coursework.env}
 \usepackage{_sty/gpi_lst}
+\usepackage{_sty/gpi_toc}
 
 % Буква приложения
-\def \gpiPrilLetter {Б}
+\def \gpiPrilLetter {В}
 
 % Код
 \ESKDletter{}{К}{Р}
@@ -52,7 +53,7 @@
 % \ESKDcolumnXIfVI {Ввввв}
 
 \begin{document}
-\input{_tex/gpi_title_page_scheme.tex}
+\input{_tex/gpi_title_page_disk.tex}
 
 \ESKDstyle{title}       % стиль страницы как у рамки
 \thispagestyle{plain}   % стиль страницы как у колонтитулов
@@ -66,9 +67,11 @@
 \textbf{Main.java} - основная функция
 
 \newpage
-    
-\lstinputlisting[language=java, name=Main.java]
-{../sources/some_project/Main.java}
+
+\begin{center}
+    \hspace{0pt} \\
+    \textbf{Оптический носитель CD-R}:
+\end{center}
 
 \newpage
 
