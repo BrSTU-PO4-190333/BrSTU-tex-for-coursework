@@ -2,36 +2,33 @@
 
 Содержание:
 
-- [Книги по TeX](#книги-по-tex)
 - [Как работать с TeX](#как-работать-с-tex)
 - [Переменные в TeX](#переменные-в-tex)
 - [Картинки в TeX](#картинки-в-tex)
 - [Листинг в TeX](#листинг-в-tex)
-
-## Книги по TeX
-
-- Коллекция eskdx v0.98 - eskdx.pdf - [Электронный ресурс]
-  Режим доступа: http://tug.ctan.org/macros/latex/contrib/eskdx/manual/eskdx.pdf
-  Дата доступа: 30.05.2022.
-
-- Использование системы верстки LaTeX - EVMiS_Latex.pdf - [Электронный ресурс]
-  Режим доступа: https://www.bstu.by/uploads/attachments/metodichki/kafedri/EVMiS_Latex.pdf
-  Дата доступа: 30.05.2022.
+- [Cписок использованных источников](#список-использованных-источников)
 
 ## Как работать с TeX
 
 Если Windows 10, то скачиваем Docker Desktop
 
-https://www.docker.com/get-started/
-
-Устанавливаем Docker Desktop.
-
-Перезагружаем компьютер.
-
-Docker Desktop скажет, что ошибка, так как нет WSL (Windows subsystem Linux).
-Там будет ссылка. Скачиваем установщик.
-
-Теперь Docker Desktop запускается.
+1. Скачиваем `Docker Desktop`
+   - https://www.docker.com/get-started/
+2. Устанавливаем `Docker Desktop`
+3. Перезагружаем компьютер
+4. Запускаем `Docker Desktop`
+5. Принимает лицензию
+6. Выдается ошибка с ссылкой на установку `WSL`
+7. Скачиваем WSL
+   - https://aka.ms/wsl2kernel
+8. Устанавливаем WSL
+9. Закрываем `Docker Desktop`
+10. Открываем `Docker Desktop`
+11. Проверяем установку, через консоль
+    ```bash
+    docker -v
+    docker-compose -v
+    ```
 
 Заходим в этом репозитории в папку `report` и запускаем
 
@@ -175,3 +172,40 @@ AA.BBCC.DDDDDD-EE FF GG
 
 - `language` - включить подсветку синтаксиса языка
 - `name` - указать другое имя листинга
+
+## Список использованных источников
+
+- Коллекция eskdx v0.98 - eskdx.pdf
+  \- [Электронный ресурс]
+  Режим доступа:
+  http://tug.ctan.org/macros/latex/contrib/eskdx/manual/eskdx.pdf
+  Дата доступа:
+  30.05.2022.
+
+- Использование системы верстки LaTeX - EVMiS_Latex.pdf
+  \- [Электронный ресурс]
+  Режим доступа:
+  https://www.bstu.by/uploads/attachments/metodichki/kafedri/EVMiS_Latex.pdf
+  Дата доступа:
+  30.05.2022.
+
+- Developers - Docker
+  \- [Электронный ресурс]
+  Режим доступа:
+  https://www.docker.com/get-started/
+  Дата доступа:
+  04.06.2022.
+
+- Manual installation steps for older versions of WSL | Microsoft Docs
+  \- [Электронный ресурс]
+  Режим доступа:
+  https://aka.ms/wsl2kernel
+  Дата доступа:
+  04.06.2022.
+
+- LaTeX/Source Code Listings - Wikibooks, open books for an open world
+  \- [Электронный ресурс]
+  Режим доступа:
+  https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings
+  Дата доступа:
+  04.06.2022.
