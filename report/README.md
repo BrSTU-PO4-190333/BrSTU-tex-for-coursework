@@ -176,36 +176,31 @@ AA.BBCC.DDDDDD-EE FF GG
 ## Список использованных источников
 
 - Коллекция eskdx v0.98 - eskdx.pdf
-  \- [Электронный ресурс]
-  Режим доступа:
-  http://tug.ctan.org/macros/latex/contrib/eskdx/manual/eskdx.pdf
-  Дата доступа:
-  30.05.2022.
+  [Электронный ресурс].
+  \- Режим доступа: http://tug.ctan.org/macros/latex/contrib/eskdx/manual/eskdx.pdf.
+  \- Дата доступа: 30.05.2022.
 
 - Использование системы верстки LaTeX - EVMiS_Latex.pdf
-  \- [Электронный ресурс]
-  Режим доступа:
-  https://www.bstu.by/uploads/attachments/metodichki/kafedri/EVMiS_Latex.pdf
-  Дата доступа:
-  30.05.2022.
+  [Электронный ресурс].
+  \- Режим доступа: https://www.bstu.by/uploads/attachments/metodichki/kafedri/EVMiS_Latex.pdf.
+  \- Дата доступа: 30.05.2022.
+
+- Опции пакета hyperref
+  [Электронный ресурс].
+  \- Режим доступа: https://grammarware.net/text/syutkin/hyperref_options.pdf.
+  \- Дата доступа: 20.02.2022.
 
 - Developers - Docker
-  \- [Электронный ресурс]
-  Режим доступа:
-  https://www.docker.com/get-started/
-  Дата доступа:
-  04.06.2022.
+  [Electronic resource].
+  \- Mode of access: https://www.docker.com/get-started/.
+  \- Date of access: 04.06.2022.
 
 - Manual installation steps for older versions of WSL | Microsoft Docs
-  \- [Электронный ресурс]
-  Режим доступа:
-  https://aka.ms/wsl2kernel
-  Дата доступа:
-  04.06.2022.
+  [Electronic resource].
+  \- Mode of access: https://aka.ms/wsl2kernel.
+  \- Date of access: 04.06.2022.
 
 - LaTeX/Source Code Listings - Wikibooks, open books for an open world
-  \- [Электронный ресурс]
-  Режим доступа:
-  https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings
-  Дата доступа:
-  04.06.2022.
+  [Electronic resource].
+  \- Mode of access: https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings.
+  \- Date of access: 04.06.2022.
