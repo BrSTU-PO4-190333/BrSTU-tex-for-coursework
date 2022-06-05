@@ -2,6 +2,13 @@ build:
 	latexmk -pdf -output-directory=_build 1_курсовая_ПО-4_Галанин_ПЗ.tex
 	latexmk -pdf -output-directory=_build 1_курсовая_ПО-4_Галанин_ПрилА.tex
 	latexmk -pdf -output-directory=_build 1_курсовая_ПО-4_Галанин_ПрилА3.tex
+	latexmk -pdf -output-directory=_build 1_курсовая_ПО-4_Галанин_ПрилА2.tex
+	latexmk -pdf -output-directory=_build 1_курсовая_ПО-4_Галанин_ПрилА1.tex
+	latexmk -pdf -output-directory=_build 1_курсовая_ПО-4_Галанин_ПрилА0.tex
+	latexmk -pdf -output-directory=_build 1_курсовая_ПО-4_Галанин_ПрилА3_portrait.tex
+	latexmk -pdf -output-directory=_build 1_курсовая_ПО-4_Галанин_ПрилА2_portrait.tex
+	latexmk -pdf -output-directory=_build 1_курсовая_ПО-4_Галанин_ПрилА1_portrait.tex
+	latexmk -pdf -output-directory=_build 1_курсовая_ПО-4_Галанин_ПрилА0_portrait.tex
 	latexmk -pdf -output-directory=_build 1_курсовая_ПО-4_Галанин_ПрилБ.tex
 	latexmk -pdf -output-directory=_build 1_курсовая_ПО-4_Галанин_ПрилВ.tex
 	latexmk -pdf -output-directory=_build ДИСЦИПЛИНА_ПО-4_Галанин_лаб1.tex
