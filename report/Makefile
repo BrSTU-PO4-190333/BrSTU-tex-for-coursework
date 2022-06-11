@@ -1,17 +1,17 @@
 build:
-	latexmk -pdf -output-directory=_build 1_курсовая_ПО-4_Галанин_ПЗ.tex
-	latexmk -pdf -output-directory=_build 1_курсовая_ПО-4_Галанин_ПрилА.tex
-	latexmk -pdf -output-directory=_build 1_курсовая_ПО-4_Галанин_ПрилА3.tex
-	latexmk -pdf -output-directory=_build 1_курсовая_ПО-4_Галанин_ПрилА2.tex
-	latexmk -pdf -output-directory=_build 1_курсовая_ПО-4_Галанин_ПрилА1.tex
-	latexmk -pdf -output-directory=_build 1_курсовая_ПО-4_Галанин_ПрилА0.tex
-	latexmk -pdf -output-directory=_build 1_курсовая_ПО-4_Галанин_ПрилА3_portrait.tex
-	latexmk -pdf -output-directory=_build 1_курсовая_ПО-4_Галанин_ПрилА2_portrait.tex
-	latexmk -pdf -output-directory=_build 1_курсовая_ПО-4_Галанин_ПрилА1_portrait.tex
-	latexmk -pdf -output-directory=_build 1_курсовая_ПО-4_Галанин_ПрилА0_portrait.tex
-	latexmk -pdf -output-directory=_build 1_курсовая_ПО-4_Галанин_ПрилБ.tex
-	latexmk -pdf -output-directory=_build 1_курсовая_ПО-4_Галанин_ПрилВ.tex
-	latexmk -pdf -output-directory=_build ДИСЦИПЛИНА_ПО-4_Галанин_лаб1.tex
+	latexmk -pdf -output-directory=_build 1_coursework_PO-4_Galanin_PZ.tex
+	latexmk -pdf -output-directory=_build 1_coursework_PO-4_Galanin_PrilA.tex
+	latexmk -pdf -output-directory=_build 1_coursework_PO-4_Galanin_PrilA3.tex
+	latexmk -pdf -output-directory=_build 1_coursework_PO-4_Galanin_PrilA2.tex
+	latexmk -pdf -output-directory=_build 1_coursework_PO-4_Galanin_PrilA1.tex
+	latexmk -pdf -output-directory=_build 1_coursework_PO-4_Galanin_PrilA0.tex
+	latexmk -pdf -output-directory=_build 1_coursework_PO-4_Galanin_PrilA3_portrait.tex
+	latexmk -pdf -output-directory=_build 1_coursework_PO-4_Galanin_PrilA2_portrait.tex
+	latexmk -pdf -output-directory=_build 1_coursework_PO-4_Galanin_PrilA1_portrait.tex
+	latexmk -pdf -output-directory=_build 1_coursework_PO-4_Galanin_PrilA0_portrait.tex
+	latexmk -pdf -output-directory=_build 1_coursework_PO-4_Galanin_PrilB.tex
+	latexmk -pdf -output-directory=_build 1_coursework_PO-4_Galanin_PrilV.tex
+	latexmk -pdf -output-directory=_build subject_PO-4_Galanin_lab1.tex
 
 clean:
 	rm -rfv ./*/*.aux
