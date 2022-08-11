@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  tex:
+    image: mirisbowring/texlive_ctan_full:2019
+    volumes:
+      - ./../:/app/
+      - ./_docker-volume/data/:/data/
+    command: sh /app/report/docker.tex.sh

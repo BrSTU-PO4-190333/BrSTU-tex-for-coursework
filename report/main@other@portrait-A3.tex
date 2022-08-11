@@ -1,0 +1,31 @@
+\documentclass[a3paper, portrait]{eskdgraph}
+
+\usepackage{env.config}
+\usepackage{env.coursework.config}
+
+\def \envCourseworkDocumentTitle {СХЕМА ПРОГРАММЫ}
+\def \envCourseworkCode {\ESKDtheLetterI\ESKDtheLetterII\ESKDtheLetterIII.\envCourseworkStudentGroupName\envCourseworkStudentGroupNumber.\envCourseworkStudentCard-0\envCourseworkNumber~81~00}
+
+\ESKDletter{}{К}{Р}
+\ESKDcolumnI {\ESKDfontIII \envCourseworkTitle \\ \envCourseworkDocumentTitle} % наименование изделия/документа
+\ESKDsignature {\envCourseworkCode} % обозначение документа
+\ESKDcolumnIX {\envCourseworkTinyEnterprise} % наименование или различительный индекс предприятия
+\ESKDcolumnXIfI {\envCourseworkStudentSurname} % Разраб.
+\ESKDcolumnXIfII {\envCourseworkTeacherSurname} % Пров.
+\ESKDcolumnXIfIII {} % Т. контр.
+\ESKDcolumnXIfIV {} % (пустая строка после Пров. и перед Н. контр.)
+\ESKDcolumnXIfV {\envCourseworkNormControlSurname} % Н. контр.
+\ESKDcolumnXIfVI {} % Утв.
+
+\begin{document}
+  \hspace{0pt}
+
+  \begin{figure}[!h]
+    \centering
+    \includegraphics[]
+    {_drawio/flowchart-example.drawio.pdf}
+  \end{figure}
+
+  \newpage
+  \hspace{0pt}
+\end{document}
