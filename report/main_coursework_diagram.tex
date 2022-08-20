@@ -6,7 +6,7 @@
 
 \def \envCourseworkPrilLetter {А}
 \def \envCourseworkDocumentTitle {СХЕМА ПРОГРАММЫ}
-\def \envCourseworkCode {\ESKDtheLetterI\ESKDtheLetterII\ESKDtheLetterIII.\envCourseworkStudentGroupName\envCourseworkStudentGroupNumber.\envCourseworkStudentCard-0\envCourseworkNumber~90~00}
+\def \envCourseworkCode {\ESKDtheLetterI\ESKDtheLetterII\ESKDtheLetterIII.\envCourseworkStudentGroupName\envCourseworkStudentGroupNumber.\envCourseworkStudentCard-\envCourseworkNumber~90~\envCourseworkVersion}
 
 \ESKDletter{}{К}{Р}
 \ESKDcolumnI {\ESKDfontIII \envCourseworkTitle \\ \envCourseworkDocumentTitle} % наименование изделия/документа
@@ -21,56 +21,60 @@
 \begin{document}
   \input{include/coursework_title_page_diagram.tex}
 
+  % = = = = = = = = = = = = = = = =
   \begin{figure}[!h]
     \centering
     \includegraphics[]
     {../sources/flowcharts/export/flowchart-example-Page-1.pdf}
   \end{figure}
+  % = = = = = = = = = = = = = = = =
 
+  % = = = = = = = = = = = = = = = =
   \newpage
-
-  \ESKDcolumnI {КАК СЛОЖИТЬ ГОРИЗОНТАЛЬНЫЙ А3}
-  
   Вместо этого листа тут сложить горизонтальный А3 в вертикальный А4.
 
   Как сложить смотри в видео:
   \url{https://www.youtube.com/watch?v=6bhkR8yr9Rk&t=187s}
+  % = = = = = = = = = = = = = = = =
 
+  % = = = = = = = = = = = = = = = =
   \newpage
-
-  \ESKDcolumnI {КАК СЛОЖИТЬ ГОРИЗОНТАЛЬНЫЙ А2}
-
   Вместо этого листа тут сложить горизонтальный А2 в вертикальный А4.
 
   Как сложить смотри в видео:
   \url{https://www.youtube.com/watch?v=6bhkR8yr9Rk&t=140s}
+  % = = = = = = = = = = = = = = = =
 
+  % = = = = = = = = = = = = = = = =
   \newpage
-
   Вместо этого листа тут сложить горизонтальный А1 в вертикальный А4.
 
   Как сложить смотри в видео:
   \url{https://www.youtube.com/watch?v=6bhkR8yr9Rk}
+  % = = = = = = = = = = = = = = = =
 
+  % = = = = = = = = = = = = = = = =
   \newpage
-
   Вместо этого листа тут сложить горизонтальный А0 в вертикальный А4.
+  % = = = = = = = = = = = = = = = =
 
+  % = = = = = = = = = = = = = = = =
   \newpage
-
   Вместо этого листа тут сложить вертикальный А3 в вертикальный А4.
+  % = = = = = = = = = = = = = = = =
 
+  % = = = = = = = = = = = = = = = =
   \newpage
-
   Вместо этого листа тут сложить вертикальный А2 в вертикальный А4.
+  % = = = = = = = = = = = = = = = =
 
+  % = = = = = = = = = = = = = = = =
   \newpage
-
   Вместо этого листа тут сложить вертикальный А1 в вертикальный А4.
+  % = = = = = = = = = = = = = = = =
 
+  % = = = = = = = = = = = = = = = =
   \newpage
-
   Вместо этого листа тут сложить вертикальный А0 в вертикальный А4.
-
-  \newpage
+  % = = = = = = = = = = = = = = = =
 \end{document}

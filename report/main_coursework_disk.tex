@@ -2,11 +2,13 @@
 
 \usepackage{config/env}
 \usepackage{config/env.coursework}
+\usepackage{styles/fancyStyleWithCodeOnTop}
 
 \def \envCourseworkDiskSize {0.00 МБ}
 \def \envCourseworkPrilLetter {Б}
 \def \envCourseworkDocumentTitle {ТЕКСТ ПРОГРАММЫ}
-\def \envCourseworkCode {\ESKDtheLetterI\ESKDtheLetterII\ESKDtheLetterIII.\envCourseworkStudentGroupName\envCourseworkStudentGroupNumber.\envCourseworkStudentCard-0\envCourseworkNumber~12~00}
+\def \envCode {\ESKDtheLetterI\ESKDtheLetterII\ESKDtheLetterIII.\envCourseworkStudentGroupName\envCourseworkStudentGroupNumber.\envCourseworkStudentCard-\envCourseworkNumber~12~\envCourseworkVersion}
+\def \envCourseworkCode {\envCode}
 
 \ESKDletter{}{К}{Р}
 \ESKDcolumnI {\ESKDfontIII \envCourseworkTitle \\ \envCourseworkDocumentTitle} % наименование изделия/документа
@@ -18,29 +20,15 @@
 \ESKDcolumnXIfV {\envCourseworkNormControlSurname} % Н. контр.
 \ESKDcolumnXIfVI {} % Утв.
 
-\usepackage{fancybox, fancyhdr} 
-\fancypagestyle{plain} % Колонтитул - код и номер страницы
-{
-  \renewcommand{\footrulewidth}{0pt}          % Толщина отделяющей полоски снизу
-  \renewcommand{\headrulewidth}{0pt}          % Толщина отделяющей полоски сверху
-  \fancyhead[C]{\hfill\envCourseworkCode\hfill\thepage} % Сверху по центру выводить код
-  \fancyfoot{}                                % Очистить нижний колонтитул
-}
-
 \begin{document}
-    \input{include/coursework_title_page_disk.tex}
+  \input{include/coursework_title_page_disk.tex}
 
-  % = = = = = = = = = =
-  \ESKDstyle{title}       % стиль страницы как у рамки
-  \thispagestyle{plain}   % стиль страницы как у колонтитулов
-  \pagestyle{plain}       % стиль страницы как у колонтитулов
-  \hspace{0pt}
-  % = = = = = = = = = =
+  % = = = = = = = = = = = = = = = =
+  \ESKDstyle{title}
+  \thispagestyle{fancyStyleWithCodeOnTopFirstPage}
+  \pagestyle{fancyStyleWithCodeOnTop}
 
-  % = = = = = = = = = =
-  \paragraph{СОДЕРЖАНИЕ} \hspace{0pt}
-
-  \hspace{0pt}
+  \subparagraph{СОДЕРЖАНИЕ} \hspace{0pt}
 
   \textbf{docker-compose.yml} - настройки запуска контейнера LaTeX
 
@@ -53,8 +41,10 @@
   \textbf{config/env.practice.sty} - переменные LaTeX для отчёты технологической практики
 
   \textbf{config/env.diplom.sty} - переменные LaTeX для дипломного проекта
+  % = = = = = = = = = = = = = = = =
 
+  % = = = = = = = = = = = = = = = =
   \newpage
-
   \textbf{Оптический носитель CD-R}:
+  % = = = = = = = = = = = = = = = =
 \end{document}

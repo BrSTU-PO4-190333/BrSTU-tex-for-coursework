@@ -1,3 +1,5 @@
+## Несколько картинок в линию
+
 ```tex
 \begin{figure}[!h]
   \centering

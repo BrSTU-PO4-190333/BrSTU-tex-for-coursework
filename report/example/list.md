@@ -39,7 +39,7 @@
   Режим доступа: \url{https://grammarware.net/text/syutkin/hyperref_options.pdf}.
   Дата~доступа:~20.02.2022.
 
-  \item[4.] Developers - Docker
+  \item[$\bullet$] Developers - Docker
   [Electronic resource].
   Mode of access: \url{https://www.docker.com/get-started/}.
   Date~of~access:~04.06.2022.

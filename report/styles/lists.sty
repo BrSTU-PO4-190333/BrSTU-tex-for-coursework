@@ -11,12 +11,17 @@
     }
 }{\end{list}}
 
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\bullet$}
+\renewcommand{\labelitemiii}{$\bullet$}
+\renewcommand{\labelitemiv}{$\bullet$}
+
 \renewenvironment{enumerate}{
-    \begin{list}{\labelitemi}{
-    \setlength{\topsep}{0pt}
-    % \setlength{\partopsep}{0pt}
-    % \setlength{\parskip}{0pt}
-    % \setlength{\itemsep}{0pt}
-    % \setlength{\parsep}{0pt}
-    }
+  \begin{list}{\labelitemi}{
+  \setlength{\topsep}{0pt}
+  % \setlength{\partopsep}{0pt}
+  % \setlength{\parskip}{0pt}
+  % \setlength{\itemsep}{0pt}
+  % \setlength{\parsep}{0pt}
+  }
 }{\end{list}}
