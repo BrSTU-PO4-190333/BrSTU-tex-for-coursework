@@ -1,3 +1,5 @@
+## Картинки в tex
+
 ```tex
 Схема программы изображена на рис~\ref{fig:flowchart} (стр.~\pageref{fig:flowchart}).
 

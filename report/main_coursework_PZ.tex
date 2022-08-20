@@ -15,7 +15,7 @@
 \usepackage{styles/url}
 
 \def \envCourseworkDocumentTitle {ПОЯСНИТЕЛЬНАЯ ЗАПИСКА}
-\def \envCourseworkCode {\ESKDtheLetterI\ESKDtheLetterII\ESKDtheLetterIII.\envCourseworkStudentGroupName\envCourseworkStudentGroupNumber.\envCourseworkStudentCard-0\envCourseworkNumber~81~00}
+\def \envCourseworkCode {\ESKDtheLetterI\ESKDtheLetterII\ESKDtheLetterIII.\envCourseworkStudentGroupName\envCourseworkStudentGroupNumber.\envCourseworkStudentCard-\envCourseworkNumber~81~\envCourseworkVersion}
 
 \ESKDletter{}{К}{Р}
 \ESKDcolumnI {\ESKDfontIII \envCourseworkTitle \\ \envCourseworkDocumentTitle} % наименование изделия/документа
@@ -28,143 +28,152 @@
 \ESKDcolumnXIfVI {} % Утв.
 
 \begin{document}
-\input{include/coursework_title_page_pz.tex}
+  \input{include/coursework_title_page_pz.tex}
 
+  % = = = = = = = = = = = = = = = =
+  \ESKDthisStyle{empty}
+  Здесь лист с ТЗ.
+  % = = = = = = = = = = = = = = = =
 
-\ESKDthisStyle{empty}
-Здесь лист с ТЗ.
+  % = = = = = = = = = = = = = = = =
+  % Содержание
+  \newpage
+  \ESKDthisStyle{formII}
+  \tableofcontents
+  \paragraph{ПРИЛОЖЕНИЕ А. СХЕМА ПРОГРАММЫ}
+  \paragraph{ПРИЛОЖЕНИЕ Б. ТЕКСТ ПРОГРАММЫ}
+  % = = = = = = = = = = = = = = = =
 
+  % = = = = = = = = = = = = = = = =
+  \newpage
+  \addcontentsline{toc}{section}{ВВЕДЕНИЕ}
+  \section*{ВВЕДЕНИЕ}
 
-% Содержание
-\newpage
-\ESKDthisStyle{formII}
-\tableofcontents
-\thispagestyle{empty} % кастыль, который уберает нумерацию по центру после содержания
-\paragraph{ПРИЛОЖЕНИЕ А. СХЕМА ПРОГРАММЫ}
-\paragraph{ПРИЛОЖЕНИЕ Б. ТЕКСТ ПРОГРАММЫ}
+  ...
+  % = = = = = = = = = = = = = = = =
 
+  % = = = = = = = = = = = = = = = =
+  \newpage
+  \section{СИСТЕМНЫЙ АНАЛИЗ И ПОСТАНОВКА ЗАДАЧИ}
 
-\newpage
-\addcontentsline{toc}{section}{ВВЕДЕНИЕ}
-\section*{ВВЕДЕНИЕ}
+  \subsection{Перечень функций}
 
-...
-
-\newpage
-\section{СИСТЕМНЫЙ АНАЛИЗ И ПОСТАНОВКА ЗАДАЧИ}
-
-\subsection{Перечень функций}
-
-\textbf {Что-то}:
-\begin{enumerate}
+  \textbf {Что-то}:
+  \begin{enumerate}
     \item один ;
     \item два .
-\end{enumerate}
+  \end{enumerate}
 
-\subsection{Требования пользователей}
+  \subsection{Требования пользователей}
 
-\textbf{Пользовательские требования пользователей}:
-\begin{enumerate}
+  \textbf{Пользовательские требования пользователей}:
+  \begin{enumerate}
     \item один ;
     \item два .
-\end{enumerate}
+  \end{enumerate}
 
-\textbf{Желательные требования пользователей}:
-\begin{enumerate}
+  \textbf{Желательные требования пользователей}:
+  \begin{enumerate}
     \item один ;
     \item два .
-\end{enumerate}
+  \end{enumerate}
+  % = = = = = = = = = = = = = = = =
 
+  % = = = = = = = = = = = = = = = =
+  \newpage
+  \section{ПРОЕКТИРОВАНИЕ СИСТЕМЫ}
 
-\newpage
-\section{ПРОЕКТИРОВАНИЕ СИСТЕМЫ}
+  \subsection{Проектирование архитектуры ПО (модули)}
 
-\subsection{Проектирование архитектуры ПО (модули)}
-
-\begin{figure}[!h]
+  \begin{figure}[!h]
     \centering
     % \includegraphics[]
     % {_assets/Flowcharts.png}
     \caption{UX}
-\end{figure}
+  \end{figure}
 
-\subsection{Проектирование UI (макеты)}
+  \subsection{Проектирование UI (макеты)}
 
-\begin{figure}[!h]
+  \begin{figure}[!h]
     \centering
     % \includegraphics[]
     % {_assets/Flowcharts.png}
     \caption{UX}
-\end{figure}
+  \end{figure}
 
-\begin{figure}[!h]
+  \begin{figure}[!h]
     \centering
     % \includegraphics[]
     % {_assets/Flowcharts.png}
     \caption{UI}
-\end{figure}
+  \end{figure}
 
-\begin{table}[h!]
+  \begin{table}[h!]
     \centering
     \begin{tabular}{|c|c|c|c|} 
-        \hline
-        Col1 & Col2 & Col2 & Col3 \\
-        \hline
-        1 & 2 & 3 & 4 \\ \hline
-        5 & 6 & 7 & 8 \\ \hline
-        1 & 2 & 3 & 4 \\ \hline
-        5 & 6 & 7 & 8 \\ \hline
+      \hline
+      Col1 & Col2 & Col2 & Col3 \\
+      \hline
+      1 & 2 & 3 & 4 \\ \hline
+      5 & 6 & 7 & 8 \\ \hline
+      1 & 2 & 3 & 4 \\ \hline
+      5 & 6 & 7 & 8 \\ \hline
     \end{tabular}
     \caption{Table to test captions and labels}
     \label{table:1}
-\end{table}
+  \end{table}
+  % = = = = = = = = = = = = = = = =
 
-\newpage
-\section{РЕАЛИЗАЦИЯ СИСТЕМЫ}
+  % = = = = = = = = = = = = = = = =
+  \newpage
+  \section{РЕАЛИЗАЦИЯ СИСТЕМЫ}
 
-\begin{lstlisting}[name=Справочник "Единицы хранения"]
-CREATE TABLE "СП_ЕдиницыХранения" (
+  \begin{lstlisting}[name=Справочник "Единицы хранения"]
+  CREATE TABLE "СП_ЕдиницыХранения" (
     Код integer NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
     Наименование text
-);
-\end{lstlisting}
+  );
+  \end{lstlisting}
+  % = = = = = = = = = = = = = = = =
 
-\newpage
-\section{ТЕСТИРОВАНИЕ СИСТЕМЫ}
+  % = = = = = = = = = = = = = = = =
+  \newpage
+  \section{ТЕСТИРОВАНИЕ СИСТЕМЫ}
 
-\begin{figure}[!h]
+  \begin{figure}[!h]
     \centering
     % \includegraphics[]
     % {_assets/Flowcharts.png}
     \caption{Результат вывода таблицы}
-\end{figure}
+  \end{figure}
 
-\begin{figure}[!h]
+  \begin{figure}[!h]
     \centering
     % \includegraphics[]
     % {_assets/Flowcharts.png}
     \caption{Результат удаления таблицы}
-\end{figure}
+  \end{figure}
 
-\begin{figure}[!h]
+  \begin{figure}[!h]
     \centering
     % \includegraphics[]
     % {_assets/Flowcharts.png}
     \caption{Результат добавления данных в таблицу}
-\end{figure}
+  \end{figure}
 
-\begin{figure}[!h]
+  \begin{figure}[!h]
     \centering
     % \includegraphics[]
     % {_assets/Flowcharts.png}
     \caption{Результат обновления данных в таблице}
 \end{figure}
+  % = = = = = = = = = = = = = = = =
 
-
-\newpage
-\addcontentsline{toc}{section}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}
-\section*{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}
-\begin{enumerate}
+  % = = = = = = = = = = = = = = = =
+  \newpage
+  \addcontentsline{toc}{section}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}
+  \section*{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}
+  \begin{enumerate}
     \item[1.] Коллекция eskdx v0.98 - eskdx.pdf
     [Электронный ресурс].
     Режим доступа: \url{http://tug.ctan.org/macros/latex/contrib/eskdx/manual/eskdx.pdf}.
@@ -194,8 +203,6 @@ CREATE TABLE "СП_ЕдиницыХранения" (
     [Electronic resource].
     Mode of access: \url{https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings}.
     Date~of~access:~04.06.2022.
-\end{enumerate}
-
-
-\newpage
+  \end{enumerate}
+  % = = = = = = = = = = = = = = = =
 \end{document}

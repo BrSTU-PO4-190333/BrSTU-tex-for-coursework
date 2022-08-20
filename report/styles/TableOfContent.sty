@@ -15,9 +15,23 @@
 %         2.2.1 Подподсекция. . . . . . . 1
 
 \usepackage{tocloft}
-\renewcommand{\l@section}[2]{\@dottedtocline{1}{0em}{3em}{#1}{#2}}
-\renewcommand{\l@subsection}[2]{\@dottedtocline{1}{0em}{3em}{#1}{#2}}
-\renewcommand{\l@subsubsection}[2]{\@dottedtocline{1}{0em}{3em}{#1}{#2}}
+
+\tocloftpagestyle{empty} % Убрать нумерацию страницы по центру снизу
+
+% Если один пункт (1)
+% \renewcommand{\l@section}[2]{\@dottedtocline{1}{0em}{12pt}{\textbf{#1}}{#2}}
+% \renewcommand{\l@subsection}[2]{\@dottedtocline{1}{0em}{12pt}{#1}{#2}}
+% \renewcommand{\l@subsubsection}[2]{\@dottedtocline{1}{0em}{12pt}{#1}{#2}}
+
+% Если два пункта (1.1)
+% \renewcommand{\l@section}[2]{\@dottedtocline{1}{0em}{18pt}{\textbf{#1}}{#2}}
+% \renewcommand{\l@subsection}[2]{\@dottedtocline{1}{0em}{18pt}{#1}{#2}}
+% \renewcommand{\l@subsubsection}[2]{\@dottedtocline{1}{0em}{18pt}{#1}{#2}}
+
+% Если три пункта (1.1.1)
+\renewcommand{\l@section}[2]{\@dottedtocline{1}{0em}{32pt}{\textbf{#1}}{#2}}
+\renewcommand{\l@subsection}[2]{\@dottedtocline{1}{0em}{32pt}{#1}{#2}}
+\renewcommand{\l@subsubsection}[2]{\@dottedtocline{1}{0em}{32pt}{#1}{#2}}
 
 % = = = = = = = = Стало:
 % Содержание
