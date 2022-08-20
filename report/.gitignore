@@ -1,7 +1,4 @@
-_build/
-_drawio/*.pdf
-_drawio/*.png
-_docker-volume/
+docker/
 
 # = = = = = = = = TeX.gitignore
 ## Core latex/pdflatex auxiliary files:

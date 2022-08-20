@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  drawio:
+    image: rlespinasse/drawio-export
+    volumes:
+      - ./:/data/
+    command: --on-changes --format pdf --crop
