@@ -1,0 +1,63 @@
+\documentclass[12pt, a4paper, simple]{eskdtext}
+
+\usepackage{config/env}
+\usepackage{config/env.practice}
+\usepackage{styles/listing}
+
+\def \envPracticePrilLetter {Б}
+\def \envPracticeCode {ОТП.\envPracticeStudentGroupName\envPracticeStudentGroupNumber.\envPracticeStudentCard-0\envPracticeNumber~12~00}
+
+\usepackage{fancybox, fancyhdr} 
+\fancypagestyle{plain} % Колонтитул - код и номер страницы
+{
+  \renewcommand{\footrulewidth}{0pt}          % Толщина отделяющей полоски снизу
+  \renewcommand{\headrulewidth}{0pt}          % Толщина отделяющей полоски сверху
+  \fancyhead[C]{\hfill\envPracticeCode\hfill\thepage} % Сверху по центру выводить код
+  \fancyfoot{}                                % Очистить нижний колонтитул
+}
+
+\begin{document}
+    \input{include/practice_title_page_text.tex}
+
+  % = = = = = = = = = =
+  \ESKDstyle{title}       % стиль страницы как у рамки
+  \thispagestyle{plain}   % стиль страницы как у колонтитулов
+  \pagestyle{plain}       % стиль страницы как у колонтитулов
+  \hspace{0pt}
+  % = = = = = = = = = =
+
+  % = = = = = = = = = =
+  \paragraph{СОДЕРЖАНИЕ} \hspace{0pt}
+
+  \hspace{0pt}
+
+  \textbf{docker-compose.yml} - настройки запуска контейнера LaTeX
+
+  \textbf{config/env.sty} - переменные LaTeX
+
+  \textbf{config/env.report.sty} - переменные LaTeX для отчёта лабораторной работы
+
+  \textbf{config/env.coursework.sty} - переменные LaTeX для курсовой
+
+  \textbf{config/env.practice.sty} - переменные LaTeX для отчёты технологической практики
+
+  \textbf{config/env.diplom.sty} - переменные LaTeX для дипломного проекта
+
+  \newpage
+  % = = = = = = = = = =
+
+  \lstinputlisting[]{docker-compose.yml}
+
+  \lstinputlisting[language=TeX]{config/env.sty}
+
+  \lstinputlisting[language=TeX]{config/env.report.sty}
+
+  \newpage
+  \lstinputlisting[language=TeX]{config/env.coursework.sty}
+
+  \newpage
+  \lstinputlisting[language=TeX]{config/env.practice.sty}
+
+  \newpage
+  \lstinputlisting[language=TeX]{config/env.diplom.sty}
+\end{document}

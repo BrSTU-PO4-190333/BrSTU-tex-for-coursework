@@ -1,0 +1,86 @@
+\documentclass[12pt, a4paper, simple]{eskdtext}
+
+\usepackage{config/env}
+\usepackage{config/env.report}
+\usepackage{styles/listing}
+\usepackage{styles/lists}
+\usepackage{styles/SectionMargins}
+\usepackage{styles/table}
+\usepackage{styles/TableOfContent}
+\usepackage{styles/url}
+
+\begin{document}
+  \input{include/lab_report_title_page.tex}
+
+  \ESKDstyle{empty}
+
+  \begin{center}
+    \textbf{Отчёт лабораторной работы №\envReportLabNumber}
+  \end{center}
+
+  \paragraph{} \textbf{Тема}: <<\envReportTitle>>
+
+  \paragraph{} \textbf{Цель}: Сгенерировать отчёт, используя \LaTeX.
+
+  \paragraph{} \textbf{Что нужно сделать}:
+
+  \paragraph{} \textbf{Разработка дизайна}:
+
+  \begin{figure}[!h]
+    \centering
+    % \includegraphics[]
+    % {_assets/ClassDiagram.png}
+    \caption{Дизайн}
+  \end{figure}
+
+  \paragraph{} \textbf{Исходный код}: 
+
+  % \lstinputlisting[language=java, name=Main.java]
+  % {../sources/some_project/Main.java}
+
+
+  \begin{lstlisting}[name=Вывод в консоль]
+  Hello, World!
+  \end{lstlisting}
+
+
+  \paragraph{} \textbf{Вывод}:
+  создали отчёт, используя \LaTeX.
+
+  % = = = = = = = =
+  \newpage
+  \paragraph{} \textbf{Список использованных источников}:
+  \begin{enumerate}
+    \item[1.] Коллекция eskdx v0.98 - eskdx.pdf
+    [Электронный ресурс].
+    Режим доступа: \url{http://tug.ctan.org/macros/latex/contrib/eskdx/manual/eskdx.pdf}.
+    Дата доступа: 30.05.2022.
+
+    \item[2.] Использование системы верстки LaTeX - EVMiS\_Latex.pdf
+    [Электронный ресурс].
+    Режим доступа: \url{https://www.bstu.by/uploads/attachments/metodichki/kafedri/EVMiS_Latex.pdf}.
+    Дата доступа: 30.05.2022.
+
+    \item[3.] Опции пакета hyperref
+    [Электронный ресурс].
+    Режим доступа: \url{https://grammarware.net/text/syutkin/hyperref_options.pdf}.
+    Дата~доступа:~20.02.2022.
+
+    \item[4.] Developers - Docker
+    [Electronic resource].
+    Mode of access: \url{https://www.docker.com/get-started/}.
+    Date~of~access:~04.06.2022.
+
+    \item[5.] Manual installation steps for older versions of WSL | Microsoft Docs
+    [Electronic resource].
+    Mode of access: \url{https://aka.ms/wsl2kernel}.
+    Date~of~access:~04.06.2022.
+
+    \item[6.] LaTeX/Source Code Listings - Wikibooks, open books for an open world
+    [Electronic resource].
+    Mode of access: \url{https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings}.
+    Date~of~access:~04.06.2022.
+  \end{enumerate}
+
+  \newpage
+\end{document}

@@ -5,5 +5,7 @@ services:
     image: mirisbowring/texlive_ctan_full:2019
     volumes:
       - ./../:/app/
-      - ./_docker-volume/data/:/data/
-    command: sh /app/report/docker.tex.sh
+      - ./docker/build/:/build/
+      - ./docker/data/:/data/
+      - ./docker/temp/:/temp/
+    command: make -C /app/report docker-compose-script
